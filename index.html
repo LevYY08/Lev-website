@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Lev's Auto Market</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Lev's Auto Market</h1>
         <nav>
             <a href="#home">Home</a>
+            <a href="#catalog">Catalog</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage of my simple website.</p>
+        <section id="search">
+            <h2>Find Your Car</h2>
+            <form>
+                <input type="text" placeholder="Search by make, model, or year" name="search">
+                <button type="submit">Search</button>
+            </form>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>This page tells you a bit about us.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch via email at example@example.com.</p>
+        <section id="featured-cars">
+            <h2>Featured Cars</h2>
+            <div class="car">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>2021 Tesla Model S</h3>
+                <p>Price: $80,000</p>
+                <p>Mileage: 10,000 miles</p>
+                <button>Learn More</button>
+            </div>
+            <div class="car">
+                <img src="car2.jpg" alt="Car 2">
+                <h3>2019 BMW 3 Series</h3>
+                <p>Price: $28,000</p>
+                <p>Mileage: 20,000 miles</p>
+                <button>Learn More</button>
+            </div>
+            <!-- Add more car entries similarly -->
         </section>
     </main>
     <footer>
-        <p>© 2024 My Simple Website</p>
+        <p>© 2024 Lev's Auto Market</p>
     </footer>
 </body>
 </html>
